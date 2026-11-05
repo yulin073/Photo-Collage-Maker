@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>½u¤W¹Ï¤ù«÷¶K¤u¨ã Photo Collage Maker</title>
+  <title>ç·šä¸Šåœ–ç‰‡æ‹¼è²¼å·¥å…· Photo Collage Maker</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
@@ -64,7 +64,7 @@
       </div>
       <div>
         <h1 class="font-bold text-lg leading-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">CollageCraft Pro</h1>
-        <p class="text-xs text-slate-400">·¥Â²²{¥N¹Ï¤ù«÷¶K¤u¨ã</p>
+        <p class="text-xs text-slate-400">æ¥µç°¡ç¾ä»£åœ–ç‰‡æ‹¼è²¼å·¥å…·</p>
       </div>
     </div>
 
@@ -72,25 +72,25 @@
     <div class="flex items-center gap-3">
       <button id="btnClearAll" class="px-3 py-2 rounded-lg text-sm text-slate-400 hover:text-white hover:bg-slate-800 transition flex items-center gap-2">
         <i class="fa-solid fa-trash-can"></i>
-        <span class="hidden sm:inline">²MªÅ¹Ï¤ù</span>
+        <span class="hidden sm:inline">æ¸…ç©ºåœ–ç‰‡</span>
       </button>
 
       <!-- Format Selection & Export Dropdown -->
       <div class="flex items-center bg-slate-800/80 p-1 rounded-xl border border-slate-700/80 gap-1">
         <select id="exportFormat" class="bg-slate-900 text-xs font-semibold text-slate-200 px-2.5 py-1.5 rounded-lg border border-slate-700 focus:outline-none focus:border-brand-500 cursor-pointer">
-          <option value="png">PNG (µL·l)</option>
-          <option value="jpeg" selected>JPG (°ªµe½è)</option>
+          <option value="png">PNG (ç„¡æ)</option>
+          <option value="jpeg" selected>JPG (é«˜ç•«è³ª)</option>
         </select>
 
         <select id="exportQuality" class="bg-slate-900 text-xs font-semibold text-slate-200 px-2.5 py-1.5 rounded-lg border border-slate-700 focus:outline-none focus:border-brand-500 cursor-pointer">
-          <option value="1.0">100% «~½è</option>
-          <option value="0.9" selected>90% «~½è</option>
-          <option value="0.8">80% «~½è</option>
+          <option value="1.0">100% å“è³ª</option>
+          <option value="0.9" selected>90% å“è³ª</option>
+          <option value="0.8">80% å“è³ª</option>
         </select>
 
         <button id="btnExport" class="px-4 py-1.5 rounded-lg text-sm font-semibold bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white shadow-md shadow-brand-600/30 transition flex items-center gap-2">
           <i class="fa-solid fa-download"></i>
-          <span>¤U¸ü¹Ï¤ù</span>
+          <span>ä¸‹è¼‰åœ–ç‰‡</span>
         </button>
       </div>
     </div>
@@ -106,15 +106,15 @@
       <div class="flex border-b border-slate-800 sticky top-0 bg-slate-900 z-10">
         <button class="tab-btn active flex-1 py-3 text-xs font-semibold text-brand-500 border-b-2 border-brand-500 flex flex-col items-center gap-1 transition" data-tab="layout">
           <i class="fa-solid fa-border-all text-base"></i>
-          <span>ª©«¬°t¸m</span>
+          <span>ç‰ˆå‹é…ç½®</span>
         </button>
         <button class="tab-btn flex-1 py-3 text-xs font-semibold text-slate-400 border-b-2 border-transparent hover:text-slate-200 flex flex-col items-center gap-1 transition" data-tab="style">
           <i class="fa-solid fa-sliders text-base"></i>
-          <span>¶¡¶Z»P·L½Õ</span>
+          <span>é–“è·èˆ‡å¾®èª¿</span>
         </button>
         <button class="tab-btn flex-1 py-3 text-xs font-semibold text-slate-400 border-b-2 border-transparent hover:text-slate-200 flex flex-col items-center gap-1 transition" data-tab="background">
           <i class="fa-solid fa-palette text-base"></i>
-          <span>¦â±m­I´º</span>
+          <span>è‰²å½©èƒŒæ™¯</span>
         </button>
       </div>
 
@@ -124,7 +124,7 @@
         <!-- TAB 1: Layout Selection -->
         <div id="tab-layout" class="tab-content space-y-5">
           <div>
-            <label class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2 block">µe¥¬ªø¼e¤ñ¨Ò (Aspect Ratio)</label>
+            <label class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2 block">ç•«å¸ƒé•·å¯¬æ¯”ä¾‹ (Aspect Ratio)</label>
             <div class="grid grid-cols-4 gap-2">
               <button class="ratio-btn active p-2.5 rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-slate-800 text-xs text-center flex flex-col items-center gap-1" data-ratio="1:1">
                 <span class="w-4 h-4 border border-current rounded-sm"></span>
@@ -146,7 +146,7 @@
           </div>
 
           <div>
-            <label class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2 block">¿ï¾Ü«÷¶Kª©«¬ (Layout Template)</label>
+            <label class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2 block">é¸æ“‡æ‹¼è²¼ç‰ˆå‹ (Layout Template)</label>
             <div id="layoutGrid" class="grid grid-cols-3 gap-3">
               <!-- JS Dynamic Grid Layouts inserted here -->
             </div>
@@ -158,7 +158,7 @@
           <!-- Gap / Spacing -->
           <div>
             <div class="flex justify-between items-center mb-2">
-              <label class="text-xs font-medium text-slate-300">¹Ï¤ù¶¡¶Z (Gap)</label>
+              <label class="text-xs font-medium text-slate-300">åœ–ç‰‡é–“è· (Gap)</label>
               <span id="valGap" class="text-xs text-slate-400 font-mono">10px</span>
             </div>
             <input type="range" id="inputGap" min="0" max="40" value="10" class="w-full accent-brand-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer">
@@ -167,7 +167,7 @@
           <!-- Border Radius -->
           <div>
             <div class="flex justify-between items-center mb-2">
-              <label class="text-xs font-medium text-slate-300">°Ï¶ô¶ê¨¤ (Radius)</label>
+              <label class="text-xs font-medium text-slate-300">å€å¡Šåœ“è§’ (Radius)</label>
               <span id="valRadius" class="text-xs text-slate-400 font-mono">8px</span>
             </div>
             <input type="range" id="inputRadius" min="0" max="50" value="8" class="w-full accent-brand-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer">
@@ -176,7 +176,7 @@
           <!-- Outer Margin / Frame Padding -->
           <div>
             <div class="flex justify-between items-center mb-2">
-              <label class="text-xs font-medium text-slate-300">µe¥¬¤ºÃä¶Z (Padding)</label>
+              <label class="text-xs font-medium text-slate-300">ç•«å¸ƒå…§é‚Šè· (Padding)</label>
               <span id="valPadding" class="text-xs text-slate-400 font-mono">10px</span>
             </div>
             <input type="range" id="inputPadding" min="0" max="50" value="10" class="w-full accent-brand-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer">
@@ -189,18 +189,18 @@
             <h4 class="text-xs font-semibold text-slate-300 flex items-center justify-between">
               <span class="flex items-center gap-2">
                 <i class="fa-solid fa-sliders text-brand-500"></i>
-                <span>¿ï¨ú°Ï¶ô·L½Õ (Selected Slot)</span>
+                <span>é¸å–å€å¡Šå¾®èª¿ (Selected Slot)</span>
               </span>
-              <button id="btnResetImg" class="text-[11px] text-slate-400 hover:text-brand-400 transition hidden" title="­«³]¹Ï¤ùÅÜ§Î">
-                <i class="fa-solid fa-rotate-left"></i> ­«³]
+              <button id="btnResetImg" class="text-[11px] text-slate-400 hover:text-brand-400 transition hidden" title="é‡è¨­åœ–ç‰‡è®Šå½¢">
+                <i class="fa-solid fa-rotate-left"></i> é‡è¨­
               </button>
             </h4>
-            <p id="noBlockSelectedHint" class="text-xs text-slate-500 italic">ÂIÀ»µe¥¬¤Wªº¯S©w¹Ï¤ù¶i¦æ±ÛÂà»PÁY©ñ</p>
+            <p id="noBlockSelectedHint" class="text-xs text-slate-500 italic">é»æ“Šç•«å¸ƒä¸Šçš„ç‰¹å®šåœ–ç‰‡é€²è¡Œæ—‹è½‰èˆ‡ç¸®æ”¾</p>
             
             <div id="blockControls" class="space-y-3 hidden">
               <div>
                 <div class="flex justify-between items-center mb-1">
-                  <label class="text-xs text-slate-400">ÁY©ñ¤ñ¨Ò (Zoom) <span class="text-[10px] text-slate-500">(¥iºu½üÁY©ñ)</span></label>
+                  <label class="text-xs text-slate-400">ç¸®æ”¾æ¯”ä¾‹ (Zoom) <span class="text-[10px] text-slate-500">(å¯æ»¾è¼ªç¸®æ”¾)</span></label>
                   <span id="valZoom" class="text-xs text-slate-400 font-mono">100%</span>
                 </div>
                 <input type="range" id="inputZoom" min="0.5" max="3" step="0.05" value="1" class="w-full accent-brand-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer">
@@ -208,33 +208,33 @@
 
               <div>
                 <div class="flex justify-between items-center mb-1">
-                  <label class="text-xs text-slate-400">±ÛÂà¨¤«× (Rotate)</label>
-                  <span id="valRotate" class="text-xs text-slate-400 font-mono">0¢X</span>
+                  <label class="text-xs text-slate-400">æ—‹è½‰è§’åº¦ (Rotate)</label>
+                  <span id="valRotate" class="text-xs text-slate-400 font-mono">0Â°</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <input type="range" id="inputRotate" min="-180" max="180" value="0" class="flex-1 accent-brand-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer">
-                  <button id="btnRotate90" class="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 shrink-0" title="¶¶®É°w±ÛÂà 90¢X">
-                    <i class="fa-solid fa-rotate-right"></i> +90¢X
+                  <button id="btnRotate90" class="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 shrink-0" title="é †æ™‚é‡æ—‹è½‰ 90Â°">
+                    <i class="fa-solid fa-rotate-right"></i> +90Â°
                   </button>
                 </div>
               </div>
 
               <div class="grid grid-cols-2 gap-2 pt-1">
                 <button id="btnFlipH" class="py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 transition">
-                  <i class="fa-solid fa-arrows-left-right mr-1"></i> ¤ô¥­Â½Âà
+                  <i class="fa-solid fa-arrows-left-right mr-1"></i> æ°´å¹³ç¿»è½‰
                 </button>
                 <button id="btnFlipV" class="py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 transition">
-                  <i class="fa-solid fa-arrows-up-down mr-1"></i> ««ª½Â½Âà
+                  <i class="fa-solid fa-arrows-up-down mr-1"></i> å‚ç›´ç¿»è½‰
                 </button>
               </div>
 
               <div class="flex gap-2 pt-1">
                 <label for="replaceImgInput" class="flex-1 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 transition text-center cursor-pointer">
-                  <i class="fa-solid fa-arrows-rotate mr-1"></i> ´À´«¹Ï¤ù
+                  <i class="fa-solid fa-arrows-rotate mr-1"></i> æ›¿æ›åœ–ç‰‡
                 </label>
                 <input type="file" id="replaceImgInput" accept="image/*" class="hidden">
                 <button id="btnRemoveImg" class="py-1.5 px-3 rounded bg-red-500/10 hover:bg-red-500/20 text-xs text-red-400 transition">
-                  <i class="fa-solid fa-trash mr-1"></i> §R°£
+                  <i class="fa-solid fa-trash mr-1"></i> åˆªé™¤
                 </button>
               </div>
             </div>
@@ -245,15 +245,15 @@
         <div id="tab-background" class="tab-content hidden space-y-5">
           <!-- Background Type -->
           <div>
-            <label class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2 block">­I´ºÃş«¬</label>
+            <label class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2 block">èƒŒæ™¯é¡å‹</label>
             <div class="grid grid-cols-2 gap-2 mb-4">
-              <button id="bgTypeSolid" class="p-2 rounded-lg border border-brand-500 bg-brand-500/10 text-xs font-medium text-brand-400">¯Â¦â­I´º</button>
-              <button id="bgTypeGradient" class="p-2 rounded-lg border border-slate-800 bg-slate-800/50 text-xs font-medium text-slate-400 hover:text-slate-200">º¥¼h­I´º</button>
+              <button id="bgTypeSolid" class="p-2 rounded-lg border border-brand-500 bg-brand-500/10 text-xs font-medium text-brand-400">ç´”è‰²èƒŒæ™¯</button>
+              <button id="bgTypeGradient" class="p-2 rounded-lg border border-slate-800 bg-slate-800/50 text-xs font-medium text-slate-400 hover:text-slate-200">æ¼¸å±¤èƒŒæ™¯</button>
             </div>
 
             <!-- Solid Colors Preset -->
             <div id="solidColorPanel" class="space-y-3">
-              <label class="text-xs text-slate-400 block">§Ö±¶°t¦â</label>
+              <label class="text-xs text-slate-400 block">å¿«æ·é…è‰²</label>
               <div class="flex flex-wrap gap-2.5">
                 <button class="color-picker-preset w-8 h-8 rounded-full border-2 border-white/20 bg-white shadow-sm transition hover:scale-110" data-color="#ffffff"></button>
                 <button class="color-picker-preset w-8 h-8 rounded-full border-2 border-white/20 bg-slate-900 shadow-sm transition hover:scale-110" data-color="#0f172a"></button>
@@ -264,14 +264,14 @@
                 <button class="color-picker-preset w-8 h-8 rounded-full border-2 border-white/20 bg-purple-200 shadow-sm transition hover:scale-110" data-color="#e9d5ff"></button>
               </div>
               <div class="flex items-center gap-3 pt-2">
-                <span class="text-xs text-slate-400">¦Û­qÃC¦â:</span>
+                <span class="text-xs text-slate-400">è‡ªè¨‚é¡è‰²:</span>
                 <input type="color" id="inputCustomBgColor" value="#ffffff" class="w-8 h-8 rounded border-0 cursor-pointer bg-transparent">
               </div>
             </div>
 
             <!-- Gradient Presets -->
             <div id="gradientColorPanel" class="space-y-3 hidden">
-              <label class="text-xs text-slate-400 block">º¥¼h­·®æ</label>
+              <label class="text-xs text-slate-400 block">æ¼¸å±¤é¢¨æ ¼</label>
               <div class="grid grid-cols-2 gap-2">
                 <button class="gradient-preset h-12 rounded-lg border border-white/10 bg-gradient-to-r from-pink-500 to-rose-500" data-gradient="linear-gradient(135deg, #ec4899, #f43f5e)"></button>
                 <button class="gradient-preset h-12 rounded-lg border border-white/10 bg-gradient-to-r from-blue-500 to-teal-400" data-gradient="linear-gradient(135deg, #3b82f6, #2dd4bf)"></button>
@@ -290,7 +290,7 @@
       <div class="p-4 border-t border-slate-800 bg-slate-950/50">
         <label for="globalImageUpload" class="w-full py-2.5 px-4 rounded-xl border border-dashed border-slate-700 hover:border-brand-500 bg-slate-800/40 hover:bg-slate-800 text-xs font-medium text-slate-300 hover:text-white flex items-center justify-center gap-2 cursor-pointer transition">
           <i class="fa-solid fa-cloud-arrow-up text-brand-500 text-base"></i>
-          <span>§å¶q¤W¶Ç¹Ï¤ù (¥i¦h¿ï)</span>
+          <span>æ‰¹é‡ä¸Šå‚³åœ–ç‰‡ (å¯å¤šé¸)</span>
         </label>
         <input type="file" id="globalImageUpload" multiple accept="image/*" class="hidden">
       </div>
@@ -310,7 +310,7 @@
       <!-- Instruction / Tip Toast -->
       <div class="absolute bottom-6 left-1/2 -translate-x-1/2 pointer-events-none bg-slate-900/90 border border-slate-800 backdrop-blur px-4 py-2 rounded-full text-xs text-slate-400 flex items-center gap-2 shadow-xl">
         <i class="fa-solid fa-circle-info text-brand-500"></i>
-        <span>´£¥Ü¡GÂIÀ»¹Ï¤ù¥i¹ï¨ä³æ¿W½Õ¾ã¡A¨Ï¥Îºu½ü©ÎÂù«ü¥iÁY©ñ·Ó¤ù</span>
+        <span>æç¤ºï¼šé»æ“Šåœ–ç‰‡å¯å°å…¶å–®ç¨èª¿æ•´ï¼Œä½¿ç”¨æ»¾è¼ªæˆ–é›™æŒ‡å¯ç¸®æ”¾ç…§ç‰‡</span>
       </div>
     </main>
 
@@ -325,13 +325,13 @@
     const LAYOUT_TEMPLATES = [
       {
         id: '1-full',
-        name: '³æ¹Ï¶ñº¡',
+        name: 'å–®åœ–å¡«æ»¿',
         count: 1,
         rects: [{ top: 0, left: 0, width: 100, height: 100 }]
       },
       {
         id: '2-v',
-        name: '¥ª¥k 2 ¤À®æ',
+        name: 'å·¦å³ 2 åˆ†æ ¼',
         count: 2,
         rects: [
           { top: 0, left: 0, width: 50, height: 100 },
@@ -340,7 +340,7 @@
       },
       {
         id: '2-h',
-        name: '¤W¤U 2 ¤À®æ',
+        name: 'ä¸Šä¸‹ 2 åˆ†æ ¼',
         count: 2,
         rects: [
           { top: 0, left: 0, width: 100, height: 50 },
@@ -349,7 +349,7 @@
       },
       {
         id: '3-left-main',
-        name: '¥ª¤j¥kÂù',
+        name: 'å·¦å¤§å³é›™',
         count: 3,
         rects: [
           { top: 0, left: 0, width: 50, height: 100 },
@@ -359,7 +359,7 @@
       },
       {
         id: '3-v',
-        name: 'ª½¦¡ 3 ¤À®æ',
+        name: 'ç›´å¼ 3 åˆ†æ ¼',
         count: 3,
         rects: [
           { top: 0, left: 0, width: 33.333, height: 100 },
@@ -369,7 +369,7 @@
       },
       {
         id: '4-grid',
-        name: '¸g¨å 2x2',
+        name: 'ç¶“å…¸ 2x2',
         count: 4,
         rects: [
           { top: 0, left: 0, width: 50, height: 50 },
@@ -380,7 +380,7 @@
       },
       {
         id: '4-header',
-        name: '¤@ªø¤T¤è',
+        name: 'ä¸€é•·ä¸‰æ–¹',
         count: 4,
         rects: [
           { top: 0, left: 0, width: 100, height: 50 },
@@ -391,7 +391,7 @@
       },
       {
         id: '5-mix',
-        name: '¤­¹Ï²Õ¦X',
+        name: 'äº”åœ–çµ„åˆ',
         count: 5,
         rects: [
           { top: 0, left: 0, width: 50, height: 50 },
@@ -403,7 +403,7 @@
       },
       {
         id: '6-grid',
-        name: '¤»®æ 2x3',
+        name: 'å…­æ ¼ 2x3',
         count: 6,
         rects: [
           { top: 0, left: 0, width: 33.333, height: 50 },
@@ -416,7 +416,7 @@
       },
       {
         id: '9-grid',
-        name: '¤E®c®æ 3x3',
+        name: 'ä¹å®®æ ¼ 3x3',
         count: 9,
         rects: Array.from({ length: 9 }, (_, i) => ({
           top: Math.floor(i / 3) * 33.333,
@@ -585,7 +585,7 @@
           placeholder.className = 'w-full h-full bg-slate-800/40 hover:bg-slate-800/80 border border-dashed border-slate-700/60 hover:border-brand-500/50 flex flex-col items-center justify-center gap-2 cursor-pointer text-slate-500 hover:text-brand-400 transition';
           placeholder.innerHTML = `
             <i class="fa-solid fa-plus text-xl"></i>
-            <span class="text-[11px]">·s¼W¹Ï¤ù</span>
+            <span class="text-[11px]">æ–°å¢åœ–ç‰‡</span>
           `;
 
           const fileInput = document.createElement('input');
@@ -756,7 +756,7 @@
         valZoom.textContent = `${Math.round(activeData.scale * 100)}%`;
 
         inputRotate.value = activeData.rotate;
-        valRotate.textContent = `${activeData.rotate}¢X`;
+        valRotate.textContent = `${activeData.rotate}Â°`;
 
         btnFlipH.classList.toggle('bg-brand-600', activeData.flipH);
         btnFlipH.classList.toggle('text-white', activeData.flipH);
@@ -767,9 +767,9 @@
         btnResetImg.classList.add('hidden');
         noBlockSelectedHint.classList.remove('hidden');
         if (activeData) {
-          noBlockSelectedHint.textContent = '¦¹°Ï¶ô©|¥¼¤W¶Ç¹Ï¤ù';
+          noBlockSelectedHint.textContent = 'æ­¤å€å¡Šå°šæœªä¸Šå‚³åœ–ç‰‡';
         } else {
-          noBlockSelectedHint.textContent = 'ÂIÀ»µe¥¬¤Wªº¯S©w¹Ï¤ù¶i¦æ±ÛÂà»PÁY©ñ';
+          noBlockSelectedHint.textContent = 'é»æ“Šç•«å¸ƒä¸Šçš„ç‰¹å®šåœ–ç‰‡é€²è¡Œæ—‹è½‰èˆ‡ç¸®æ”¾';
         }
       }
     }
@@ -859,7 +859,7 @@
       inputRotate.addEventListener('input', (e) => {
         if (state.activeBlockIndex !== null && state.blocksData[state.activeBlockIndex]) {
           state.blocksData[state.activeBlockIndex].rotate = parseInt(e.target.value);
-          valRotate.textContent = `${e.target.value}¢X`;
+          valRotate.textContent = `${e.target.value}Â°`;
           renderCanvas();
         }
       });
